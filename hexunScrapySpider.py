@@ -1,7 +1,6 @@
 import requests
 import demjson
 import tablib
-import time
 
 def getHTMLDATA(url, kv):
 	try:
@@ -30,7 +29,6 @@ def main():
 			del dictInList['Wstock']
 			del dictInList['Tstock']
 		data += dataList
-		time.sleep(1)
 
 	allData = []
 	tableHeader = tuple(["序号","股票名称/代码","股东责任","总得分","等级","员工责任","供应商、客户和消费者权益责任","环境责任","社会责任"])
